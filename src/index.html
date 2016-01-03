@@ -13,14 +13,14 @@
   <!--[if lte IE 8]>
   <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
 </head>
-<body>
+<body ng-controller="HomeController as Home">
 
 <!-- Page Wrapper -->
 <div id="page-wrapper">
 
   <!-- Header -->
   <header id="header" class="alt">
-    <h1><a href="index.html"><img src="images/icon.png" alt="Angular Camp"/>AngularCamp</a></h1>
+    <h1><a href="index.html"><img src="images/icon.png" alt="Angular Camp"/>{{ Home.title }}</a></h1>
     <!-- <nav>
       <a href="#menu">Menu</a>
     </nav> -->
@@ -31,11 +31,10 @@
     <div class="inner">
       <h2>Menu</h2>
       <ul class="links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="generic.html">Generic</a></li>
-        <li><a href="elements.html">Elements</a></li>
-        <li><a href="#">Log In</a></li>
-        <li><a href="#">Sign Up</a></li>
+        <li ng-repeat="item in Home.menu">
+          <a ng-href="{{ item.url }}">{{ item.label }}</a>
+        </li>
+
       </ul>
       <a href="#" class="close">Close</a>
     </div>
@@ -231,6 +230,7 @@
 </div>
 
 <!-- Scripts -->
+<script src="bundle.js"></script>
 <script src="assets/js/skel.min.js"></script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.scrollex.min.js"></script>
