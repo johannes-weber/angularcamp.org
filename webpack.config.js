@@ -18,6 +18,7 @@ module.exports = {
       { test: /\.js$/, exclude: /node_modules/, loader:"babel", query: { presets: ['es2015', 'stage-1'] } },
 
       // load css and process less
+      { test: /\.less$/, loader: "style!css!less"},
       { test: /\.css$/, loader: "style!css"},
 
       // load JSON files and HTML
@@ -25,8 +26,11 @@ module.exports = {
       { test: /\.html$/, exclude: /node_modules/, loader:"raw" },
 
       // load fonts(inline base64 URLs for <=8k)
-      { test: /\.(ttf|eot|svg|otf)$/, loader: "file" },
-      { test: /\.woff(2)?$/, loader: "url?limit=8192&minetype=application/font-woff"},
+      //{ test: /\.(ttf|eot|svg|otf)$/, loader: "file" },
+      //{ test: /\.woff(2)?$/, loader: "url?limit=8192&minetype=application/font-woff"},
+
+      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&minetype=application/font-woff" },
+      { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" },
 
       // load images (inline base64 URLs for <=8k images)
       {test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'}

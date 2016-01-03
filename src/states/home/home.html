@@ -1,0 +1,213 @@
+<!-- Page Wrapper -->
+<div id="page-wrapper">
+
+  <!-- Header -->
+  <header id="header" class="alt">
+    <h1><a href="index.html"><img src="images/icon.png" alt="Angular Camp"/>{{ Home.title }}</a></h1>
+    <!-- <nav>
+      <a href="#menu">Menu</a>
+    </nav> -->
+  </header>
+
+  <!-- Menu -->
+  <nav id="menu">
+    <div class="inner">
+      <h2>Menu</h2>
+      <ul class="links">
+        <li ng-repeat="item in Home.menu">
+          <a ng-href="{{ item.url }}">{{ item.label }}</a>
+        </li>
+
+      </ul>
+      <a href="#" class="close">Close</a>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <section id="banner">
+    <div class="inner">
+      <div class="logo"><img src="images/AngularCamp-logo.png" alt=""/></div>
+      <h1 class="event-date"><span>30th & 31st January, Barcelona</span></h1>
+      <h2>Learn. Share. Discover.</h2>
+      <!--<p>A local event focused on everything related to AngularJS</p>-->
+      <p>A local event focused on everything related to AngularJS</p>
+
+      <a href="http://www.meetup.com/AngularJS-Beers/events/227397873/"
+         target="_blank"
+         class="button special icon fa-ticket">Get ticket for pre-party</a>
+
+      <a href="#"
+         target="_blank"
+         class="button icon fa-ticket">Get ticket for Angular Camp</a>
+
+    </div>
+  </section>
+
+  <!-- Wrapper -->
+  <section id="wrapper">
+
+    <!-- One -->
+    <section id="one" class="wrapper spotlight style1">
+      <div class="inner">
+        <div class="content">
+          <h2 class="major">Venue <i class="fa fa-map-marker"></i></h2>
+
+          <div class="location full-width">
+            <h4>28th January - Pre-party</h4>
+            <img class="img-responsive" src="images/venue/location-preparty.jpg" alt=""/>
+            <p>Antiga Fàbrica Estrella Damm</p>
+          </div>
+          <!--
+                              <div class="location">
+                                <h4>30th-31st January - AngularCamp</h4>
+                              </div>
+          -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Two -->
+    <section id="two" class="wrapper alt spotlight style2">
+      <div class="inner">
+        <div class="content">
+          <h2 class="major">Schedule <i class="fa fa-calendar"></i></h2>
+          <div class="table-wrapper">
+            <table class="alt">
+              <thead>
+              <tr>
+                <th>28th Presentation</th>
+                <th>30th Angular Camp</th>
+                <th>31st Angular Camp</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>19:00 - ?</td>
+                <td>9:30 - Start</td>
+                <td>10:00 - Start</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>19:00 - Official End</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>20:30 - Dinner party</td>
+                <td>18:00 - Official End</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Three -->
+    <section id="three" class="wrapper spotlight style3">
+      <div class="inner">
+        <div class="content">
+          <h2 class="major">Collaborators <i class="fa fa-users"></i></h2>
+          <div class="speackers">
+            <a href="https://twitter.com/webmaxru" target="_blank" class="image">
+              <img src="images/pic01.jpg" alt="Maxim Salnikov"/>
+              <span class="icon fa-twitter"></span> Maxim Salnikov
+            </a>
+            <a href="https://twitter.com/elecash" target="_blank" class="image">
+              <img src="images/raul_jimenez.jpg" alt="Raúl Jiménez"/>
+              <span class="icon fa-twitter"></span> Raúl Jiménez
+            </a>
+            <a href="https://twitter.com/jowe" target="_blank" class="image">
+              <img src="images/pic02.jpg" alt="Johannes Weber"/>
+              <span class="icon fa-twitter"></span> Johannes Weber
+            </a>
+            <a href="https://twitter.com/sebawita" target="_blank" class="image">
+              <img src="images/pic03.jpg" alt="Sebastian Witalec"/>
+              <span class="icon fa-twitter"></span> Sebastian Witalec
+            </a>
+            <a href="https://twitter.com/nirkaufman" target="_blank" class="image">
+              <img src="images/pic-new.jpg" alt="Nir Kaufman"/>
+              <span class="icon fa-twitter"></span> Nir Kaufman
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Four -->
+    <section id="four" class="wrapper alt spotlight style1">
+      <div class="inner">
+        <div class="content">
+          <h2 class="major">Supporters</h2>
+          <p>Angular Camp would not be possible without the kind support of these companies. We are looking for
+            sponsors. Contact to <a href="http://www.meetup.com/AngularJS-Beers/members/107536792/" target="_blank">organizer</a>
+          </p>
+          <!-- <a href="#" class="special">Learn more</a> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Five -->
+    <section id="five" class="wrapper spotlight style2">
+      <div class="inner">
+        <div class="content">
+          <h2 class="major">CoC <i class="fa fa-check-square-o"></i></h2>
+          <p>Code of Conduct to ensure a positive community experience for everyone.</p>
+          <a class="button" href="coc.html" target="_blank">Code of Conduct</a>
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="inner">
+      <h2 class="major">About</h2>
+      <p>AngularCamps are a series of community run events around the world. Launched in Barcelona, Spain, the goal of
+        the camps is to help strengthen the skills of the Angular community and offer insights to techniques, trends and
+        feature development.</p>
+      <!-- <form method="post" action="#">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rows="4"></textarea>
+        </div>
+        <ul class="actions">
+          <li><input type="submit" value="Send Message" /></li>
+        </ul>
+      </form> -->
+      <ul class="contact">
+        <!-- <li class="fa-home">
+          Untitled Inc<br />
+          1234 Somewhere Road Suite #2894<br />
+          Nashville, TN 00000-0000
+        </li> -->
+        <!-- <li class="fa-phone">(000) 000-0000</li> -->
+        <!-- <li class="fa-envelope"><a href="#" target="_blank">info@angularbeers.com</a></li> -->
+        <!-- <li class="fa-twitter"><a href="https://twitter.com/AngularCamp/" target="_blank">twitter.com/AngularCamp</a></li>
+        <li class="fa-facebook"><a href="https://www.facebook.com/AngularCamp/" target="_blank">facebook.com/AngularCamp</a></li> -->
+        <!-- <li class="fa-instagram"><a href="#">instagram.com/untitled-tld</a></li> -->
+      </ul>
+      <ul class="copyright">
+        <li>AngularCamp. Made with <i class="fa fa-heart fa-1"></i> by <a href="http://www.meetup.com/AngularJS-Beers"
+                                                                          target="_blank">AngularJS & Beers</a></li>
+        <li><a href="https://twitter.com/AngularCamp/" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a>
+        </li>
+        <li><a href="https://www.facebook.com/AngularCamp/" class="icon fa-facebook" target="_blank"><span
+            class="label">Facebook</span></a></li>
+        <li><a href="https://github.com/AngularCamp" class="icon fa-github" target="_blank"><span
+            class="label">Github</span></a></li>
+        <li>Template by <a href="http://html5up.net">HTML5 UP</a></li>
+      </ul>
+    </div>
+  </section>
+
+</div>
