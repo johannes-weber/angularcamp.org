@@ -12,7 +12,9 @@ import router  from 'angular-ui-router';
 // import states controllers
 import {HomeController} from 'states/home/home';
 
-function routesConfig ($stateProvider) {
+function routesConfig ($stateProvider, $urlRouterProvider) {
+  $urlRouterProvider.otherwise('/home');
+
   $stateProvider
     .state('home', {
       url:'/home',
