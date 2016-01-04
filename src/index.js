@@ -29,4 +29,6 @@ angular.module('angular.camp', ['ui.router'])
   .controller('HomeController', HomeController);
 
 // run forest, run!
-angular.bootstrap(document, ['angular.camp']);
+angular.element(document).ready(function(){
+  angular.bootstrap(document, ['angular.camp']);
+});
