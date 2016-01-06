@@ -3904,8 +3904,9 @@ body.is-loading #banner p {
 
 .wrapper .speackers .image {
   border-radius: 5px;
-  width: 20%;
+  width: 15%;
   margin-left: 2em !important;
+  font-size: 0.9em;
 }
 
 .wrapper .speackers .image img {
