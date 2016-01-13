@@ -18,58 +18,19 @@
       color: black !important;
     }
   </style>
+  <script src="node_modules/angular/angular.min.js"></script>
 </head>
 <body>
 
 <!-- Page Wrapper -->
 <div id="page-wrapper">
 
-  <!-- Header -->
-  <header id="header" class="alt">
-    <h1><a href="index.html"><img src="images/icon.png" alt="Angular Camp"/>AngularCamp</a></h1>
-    <nav>
-      <a href="#menu">Menu</a>
-    </nav>
-  </header>
+  <pageHeader></pageHeader>
 
   <!-- Menu -->
-  <nav id="menu">
-    <div class="inner">
-      <h2>Menu</h2>
-      <ul class="links">
-        <li><a href="#page-wrapper">Home</a></li>
-        <li><a href="#what-to-expect">What to expect?</a></li>
-        <li><a href="#schedule">Schedule</a></li>
-        <li><a href="#contributions-and-interests">Contributions and interests</a></li>
-        <li><a href="#how-is-it-working">How is it working?</a></li>
-        <li><a href="#venue">Venue</a></li>
-        <li><a href="#collaborators">Collaborators</a></li>
-        <li><a href="#supporters">Supporters</a></li>
-        <li><a href="#code-of-conduct">Code of Conduct</a></li>
-        <li><a href="#footer">About</a></li>
-      </ul>
-      <a href="#" class="close">Close</a>
-    </div>
-  </nav>
+  <navbar></navbar>
 
-  <!-- Banner -->
-  <section id="banner">
-    <div class="inner">
-      <div class="logo"><img src="images/AngularCamp-logo.png" alt=""/></div>
-      <h1 class="event-date"><span>30th & 31st January, Barcelona</span></h1>
-      <h2>Learn. Share. Discover.</h2>
-      <p>A local event focused on everything related to AngularJS</p>
-
-      <a href="http://www.meetup.com/AngularJS-Beers/events/227397873/"
-         target="_blank"
-         class="button special icon fa-ticket">Get ticket for pre-party</a>
-
-      <a href="http://www.meetup.com/AngularCamp/events/227759458/"
-         target="_blank"
-         class="button special ac-button icon fa-ticket">Get ticket for Angular Camp</a>
-
-    </div>
-  </section>
+  <banner></banner>
 
   <!-- Wrapper -->
   <section id="wrapper">
@@ -556,6 +517,18 @@
 <!--[if lte IE 8]>
 <script src="assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="assets/js/main.js"></script>
+
+<!-- angular assets -->
+<script src="index.js"></script>
+
+<!-- angular directives -->
+<script src="directives/header/header.js"></script>
+<script src="directives/banner/banner.js"></script>
+<script src="directives/nav/nav.js"></script>
+
+
+<script src="boot.js"></script>
+
 <script>
   (function (i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
