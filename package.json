@@ -1,0 +1,23 @@
+{
+  "name": "angularcamp.org",
+  "version": "1.0.0",
+  "description": "A local event focused on everything related to AngularJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngularCamp/angularcamp.org.git"
+  },
+  "author": "Nir Kaufman <nirkaufman.com> (nirkaufman.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AngularCamp/angularcamp.org/issues"
+  },
+  "homepage": "https://github.com/AngularCamp/angularcamp.org#readme",
+  "dependencies": {
+    "angular": "^1.4.8",
+    "angular-route": "^1.4.8"
+  }
+}
