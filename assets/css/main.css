@@ -4435,3 +4435,21 @@ body.is-loading #banner p {
   margin: 0;
   padding: 0;
 }
+
+/* Signup form */
+.signup-form {
+  display: inline-block;
+  padding: 1em;
+  background: #33456D;
+  border: 1px solid #0E264E;
+  min-width: 500px;
+}
+
+.signup-form-input {
+    border: #333;
+}
+
+.signup-form-submit {
+  background: #DAD72A;
+  color: #333 !important;
+}

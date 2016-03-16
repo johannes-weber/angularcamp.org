@@ -28,7 +28,7 @@
   <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
   <link rel="stylesheet" href="assets/css/responsiveslides.css"/>
   <link rel="stylesheet" href="assets/css/responsiveslides.themes.css"/>
-  <link rel="stylesheet" href="assets/css/main.min.css"/>
+  <link rel="stylesheet" href="assets/css/main.css"/>
   <!--[if lte IE 9]>
   <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
   <!--[if lte IE 8]>
@@ -48,46 +48,36 @@
   <!-- Header -->
   <header id="header" class="alt">
     <h1><a href="index.html"><img src="images/icon.png" alt="Angular Camp"/>AngularCamp</a></h1>
-    <nav>
-      <a href="#menu">Menu</a>
-    </nav>
   </header>
-
-  <!-- Menu -->
-  <nav id="menu">
-    <div class="inner">
-      <h2>Menu</h2>
-      <ul class="links">
-        <li><a href="#page-wrapper">Home</a></li>
-        <li><a href="#what-to-expect">What to expect?</a></li>
-        <li><a href="#schedule">Schedule</a></li>
-        <li><a href="#contributions-and-interests">Contributions and interests</a></li>
-        <li><a href="#how-is-it-working">How is it working?</a></li>
-        <li><a href="#venue">Venue</a></li>
-        <li><a href="#collaborators">Collaborators</a></li>
-        <li><a href="#supporters">Supporters</a></li>
-        <li><a href="#code-of-conduct">Code of Conduct</a></li>
-        <li><a href="#footer">About</a></li>
-      </ul>
-      <a href="#" class="close">Close</a>
-    </div>
-  </nav>
 
   <!-- Banner -->
   <section id="banner">
     <div class="inner">
       <div class="logo"><img src="images/AngularCamp-logo.png" alt=""/></div>
-      <h1 class="event-date"><span>30th & 31st January, Barcelona</span></h1>
+      <h1 class="event-date"><span>1st - 3rd July, Barcelona</span></h1>
       <h2>Learn. Share. Discover.</h2>
       <p>A local event focused on everything related to AngularJS</p>
 
-      <a href="http://www.meetup.com/AngularJS-Beers/events/227397873/"
-         target="_blank"
-         class="button special icon fa-ticket">Get ticket for pre-party</a>
 
-      <a href="http://www.meetup.com/AngularCamp/events/227759458/"
-         target="_blank"
-         class="button special ac-button icon fa-ticket">Get ticket for Angular Camp</a>
+      <!-- @TODO: add mailchimp sign up data -->
+      <div class="signup-form">
+        <form method="post" action="#" novalidate>
+          <h3>Keep me updated</h3>
+          <div>Be on track and get all relevant updates</div>
+          <br>
+          <div class="row uniform">
+            <div class="8u 12u$(xsmall)">
+              <input type="text" name="EMAIL" placeholder="Your E-Mail" value="" class="signup-form-input" />
+              <input type="hidden" aria-hidden="true" name="b_d3a2c4d93441c84c0a1e6e808_705caf4dc7" tabindex="-1" value="">
+            </div>
+            <div class="4u 12u$(xsmall)">
+              <input type="submit" value="Submit" class="special signup-form-submit" />
+            </div>
+          </div>
+        </form>
+      </div>
+
+
 
     </div>
   </section>
@@ -110,384 +100,9 @@
       </div>
     </section>
 
-    <!-- Schedule -->
-    <section class="wrapper alt spotlight style2" id="schedule">
-      <div class="inner">
-        <div class="content">
-          <h2 class="major">Schedule <i class="fa fa-calendar"></i></h2>
-          <div class="table-wrapper">
-
-            <table class="alt">
-              <thead>
-              <tr>
-                <th></th>
-                <th>
-                  Saturday, 30th Jan 2016
-                </th>
-                <th>
-                  Sunday, 31st Jan 2016
-                </th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr>
-                <td>
-                  09:30
-                </td>
-                <td>
-                  Welcome & votings
-                </td>
-                <td>
-                  -
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  10:00
-                </td>
-                <td>
-
-                </td>
-                <td>
-                  Start of day 2 - Workshops, Talks & Sessions
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  11:30
-                </td>
-                <td colspan="2">
-                  Break
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  12:00
-                </td>
-                <td colspan="2">
-                  Workshops, Talks & Sessions
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  13:30
-                </td>
-                <td colspan="2">
-                  Lunch
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  15:00
-                </td>
-                <td colspan="2">
-                  Workshops, Talks & Sessions
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  17:00
-                </td>
-                <td colspan="2">
-                  Break
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  17:30
-                </td>
-                <td colspan="2">
-                  Workshops, Talks & Sessions
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  19:00
-                </td>
-                <td>
-                  End of day 1
-                </td>
-                <td>
-                  End of AngularCamp
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  20:30
-                </td>
-                <td>
-                  Dinner Party
-                </td>
-                <td>
-                  -
-                </td>
-              </tr>
-              </tbody>
-            </table>
-
-
-            <h2 class="major">The following Talks and Workshops and Interests<br> have already been pledged</h2>
-
-            <div class="row">
-              <div class="6u 12u$(medium)">
-                <h4>Contributions</h4>
-                <ul class="alt" id="contributions"></ul>
-              </div>
-              <div class="6u$ 12u$(medium)">
-                <h4>Interests</h4>
-                <ul class="alt" id="interests"></ul>
-              </div>
-            </div>
 
 
 
-            <ul class="alt">
-              <li>
-                <p>
-                  <br>
-                  Are you interested in contributing? Here you can submit it.
-                  <br>
-                  <br>
-                  <a href="https://github.com/AngularCamp/angularcamp.org/issues"
-                     target="_blank" class="button">Submit your proposal or interest</a>
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contributions and interests -->
-    <section class="wrapper spotlight style3" id="contributions-and-interests">
-      <div class="inner">
-        <div class="content">
-          <h2 class="major">Contributions and interests</h2>
-          <p>
-            Your contributions, talks and discussions are essential for the AngularCamp. We created a form where you can
-            collect your interests and proposals.
-            Check out our <a
-              href="https://github.com/AngularCamp/angularcamp.org/issues"
-              target="_blank">Contribs & Interests Form</a> and submit your proposals or the topics which you are
-            interested in!
-            <br>
-            <br>
-            <strong>Everyone is invited</strong> to give a talk at AngularCamp: at the days of the conference we all
-            vote together which talks we would love to see - the talks with the most votes will be put on the schedule
-            then.
-            <br>
-            We are looking forward to many awesome sessions with you at AngularCamp!
-            <br>
-          </p>
-          <div class="align-right">
-            <a href="https://github.com/AngularCamp/angularcamp.org/issues"
-               target="_blank" class="button">Check out our Contribs & Interests</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- How is it working? -->
-    <section class="wrapper alt spotlight style4" id="how-is-it-working">
-      <div class="inner">
-        <div class="content">
-          <h2 class="major">How is it working?</h2>
-          <p class="text-left">
-            AngularCamp is a collaborative community conference for all people which are interested in in coming
-            together to share their recent work in a collaborative manner.
-            <br>
-            At the beginning of the conference participants propose ideas for talks, workshops, and demos that are then
-            curated and put into sessions. Besides that, we already received some proposals which will be a fix part of
-            AngularCamp. You can find them in on the schedule page.
-            <br>
-            After the session design phase at the beginning, participants can choose which of the sessions to attend. In
-            addition to the ongoing sessions, socializing and open discussion are encouraged in the open areas in order
-            to promote cross-pollination of ideas. The overall idea is to have a creative space where people can share
-            their ideas and listen to others. AngularCamp provides just enough structure to unite everyone with openness
-            to allow for creativity to flow.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Venue -->
-    <section class="wrapper spotlight style5" id="venue">
-      <div class="inner">
-        <div class="content">
-          <h2 class="major">Venue <i class="fa fa-map-marker"></i></h2>
-
-          <div class="location full-width">
-            <div class="row">
-              <div class="6u 12u$(small) 12u$(xsmall)">
-                <h3 class="text-left">Preparty, 28th January 2016</h3>
-                <p class="text-left">
-                  Antiga Fàbrica Estrella Damm
-                  <br>
-                  Carrer del Rosselló, 515, 08025 Barcelona
-                </p>
-                <div>
-                  <a href="https://www.google.com/maps/place/Carrer+del+Rossell%C3%B3,+515,+08025+Barcelona,+Spain/@41.4090519,2.17589,17z/data=!3m1!4b1!4m2!3m1!1s0x12a4a2da38aa02ff:0x7ca857d57da09877?hl=en"
-                     target="_blank" title="Check out the details on google maps" class="venue-map">
-                    <img src="http://goo.gl/F53fl1" alt="Map where the venue is located" class="img-responsive">
-                  </a>
-                </div>
-              </div>
-
-              <div class="6u 12u$(small) 12u$(xsmall)">
-                <h3 class="text-left">AngularCamp 30-31st January 2016</h3>
-                <p class="text-left">
-                  Parc de les Humanitats i les Ciències Socials
-                  <br>
-                  Carrer del Perú, 52, 08018 Barcelona | Tel. 934 034 543
-                </p>
-                <a href="https://www.google.com/maps/place/Carrer+del+Perú,+52,+08018+Barcelona/" class="venue-map">
-                  <img
-                      src="http://maps.googleapis.com/maps/api/staticmap?center=Torre+Agbar,+BArcelona&zoom=15&scale=false&size=600x300&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CCarrer+del+Perú+52,+08018+Barcelona"
-                      alt="Parc de les Humanitats i les Ciències Socials" class="img-responsive">
-                </a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="slider-wrapper">
-                <ul class="rslides" id="slider">
-                  <li class="rslide-item">
-                    <img src="/images/venue/preparty01.jpg" alt="" />
-                  </li>
-                  <li class="rslide-item">
-                    <img src="/images/venue/preparty02.jpg" alt="" />
-                  </li>
-                  <li class="rslide-item">
-                    <img src="/images/venue/preparty03.jpg" alt="" />
-                  </li>
-                  <li class="rslide-item">
-                    <img src="/images/venue/preparty04.jpg" alt="" />
-                  </li>
-                  <li class="rslide-item">
-                    <img src="/images/venue/preparty05.jpg" alt="" />
-                  </li>
-                  <li class="rslide-item">
-                    <img src="/images/venue/ubvenue01.jpg" alt="" />
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Collaborators -->
-    <section class="wrapper alt spotlight style2" id="collaborators">
-      <div class="inner">
-        <div class="content">
-          <h2 class="major">Collaborators <i class="fa fa-users"></i></h2>
-          <div class="speackers">
-            <a href="https://twitter.com/webmaxru" target="_blank" class="image">
-              <img src="images/speaker/maxim-salnikov.jpg" alt="Maxim Salnikov"/>
-              <span class="icon fa-twitter"></span> Maxim Salnikov
-            </a>
-            <a href="https://twitter.com/elecash" target="_blank" class="image">
-              <img src="images/speaker/raul-jimenez.jpg" alt="Raúl Jiménez"/>
-              <span class="icon fa-twitter"></span> Raúl Jiménez
-            </a>
-            <a href="https://twitter.com/jowe" target="_blank" class="image">
-              <img src="images/speaker/johannes-weber.jpg" alt="Johannes Weber"/>
-              <span class="icon fa-twitter"></span> Johannes Weber
-            </a>
-            <a href="https://twitter.com/sebawita" target="_blank" class="image">
-              <img src="images/pic03.jpg" alt="Sebastian Witalec"/>
-              <span class="icon fa-twitter"></span> Sebastian Witalec
-            </a>
-            <a href="https://twitter.com/nirkaufman" target="_blank" class="image">
-              <img src="images/speaker/nir-kaufman.jpg" alt="Nir Kaufman"/>
-              <span class="icon fa-twitter"></span> Nir Kaufman
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Supporters -->
-    <section class="wrapper spotlight style3" id="supporters">
-      <div class="inner">
-        <div class="content">
-          <h2 class="major">Supporters</h2>
-          <p class="text-left">
-            Angular Camp would not be possible without the kind support of these companies.
-            <br>
-          </p>
-          <div class="speackers sponsors-wrapper">
-            <a href="https://developers.google.com/" target="_blank" class="image sponsor-item">
-              <img src="images/supporters/logo_googledevelopers.png" alt="Google Developers"/>
-              <span class="sponsor-title">Google Developers</span>
-            </a>
-            <a href="https://egghead.io/" target="_blank" class="image sponsor-item">
-              <img src="images/supporters/logo_eggheadio.svg" alt="egghead.io"/>
-              <span class="sponsor-title">egghead.io</span>
-            </a>
-            <a href="https://www.jetbrains.com/" target="_blank" class="image sponsor-item">
-              <img src="images/supporters/logo_jetbrains.png" alt="JetBrains"/>
-              <span class="sponsor-title">JetBrains</span>
-            </a>
-            <a href="http://ionicframework.com/" target="_blank" class="image sponsor-item">
-              <img src="images/supporters/logo_ionic.png" alt="Ionic Framework"/>
-              <span class="sponsor-title">Ionic</span>
-            </a>
-            <a href="https://www.nativescript.org/" target="_blank" class="image sponsor-item">
-              <img src="images/supporters/logo_telerik.png" alt="NativeScript"/>
-              <span class="sponsor-title">NativeScript</span>
-            </a>
-            <a href="https://www.cdmon.com/en" target="_blank" class="image sponsor-item">
-              <img src="images/supporters/logo_cdmon.png" alt="CDMON"/>
-              <span class="sponsor-title">CDmon</span>
-            </a>
-            <a href="http://www.webvisionsevent.com/barcelona/" target="_blank" class="image sponsor-item">
-              <img src="images/supporters/logo_webvisions.png" alt="WebVisions"/>
-              <span class="sponsor-title">WebVisions</span>
-            </a>
-            <a href="http://hiringo.com/" target="_blank" class="image sponsor-item">
-              <img src="images/supporters/logo_hiringo.png" alt="Hiringo"/>
-              <span class="sponsor-title">Hiringo</span>
-            </a>
-            <a href="https://mayflower.de/" target="_blank" class="image sponsor-item">
-              <img src="images/supporters/logo_mayflower.png" alt="MAYFLOWER"/>
-              <span class="sponsor-title">MAYFLOWER</span>
-            </a>
-            <a href="http://www.500tech.com/" target="_blank" class="image sponsor-item">
-              <img src="images/supporters/logo_500tech.png" alt="500tech"/>
-              <span class="sponsor-title">500tech</span>
-            </a>
-            <a href="https://sysdivision.com/" target="_blank" class="image sponsor-item">
-              <img src="images/supporters/logo-sysdivision.png" alt="sysdivision"/>
-              <span class="sponsor-title">SysDivision</span>
-            </a>
-            <a href="http://www.gracenote.com/" target="_blank" class="image sponsor-item">
-              <img src="images/supporters/logo-gracenote.png" alt="gracenote"/>
-              <span class="sponsor-title">GraceNote</span>
-            </a>
-            <a href="http://www.camisetas.info/" target="_blank" class="image sponsor-item">
-              <img src="images/supporters/logo-camisetasinfo.png" alt="camisetas.info"/>
-              <span class="sponsor-title">camisetas.info</span>
-            </a>
-            <a href="http://www.etecture.de/event/angularcamp/" target="_blank" class="image sponsor-item">
-              <img src="images/supporters/logo-etecture.png" alt="ETECTURE GmbH"/>
-              <span class="sponsor-title">ETECTURE</span>
-            </a>
-          </div>
-          <br>
-          <p>
-            <strong>We are looking for sponsors!</strong>
-            <br>
-            Help us make this experience for the attendees even more awesome!
-            <br>
-            - If you're interested,
-            <br>
-            <a href="http://www.meetup.com/AngularJS-Beers/members/107536792/" class="button small" target="_blank">just
-              get in touch with us</a>
-          </p>
-        </div>
-      </div>
-    </section>
 
     <!-- Code of Conduct -->
     <section class="wrapper alt spotlight style2" id="code-of-conduct">
